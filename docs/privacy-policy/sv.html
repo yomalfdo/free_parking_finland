@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integritetspolicy — Free Parking Finder Finland</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    background: #fbfbf6;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  .updated { color: #555; font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; color: #1e4620; }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: #2e7d32; }
+  .lang-links { font-size: 0.9rem; margin-bottom: 2rem; }
+  .lang-links a { margin-right: 0.75rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border: 1px solid #ddd; vertical-align: top; font-size: 0.95rem; }
+  th { background: #eef4ee; }
+</style>
+</head>
+<body>
+
+<p class="lang-links">🌐 <a href="en.html">English</a> · <a href="fi.html">Suomi</a> · <a href="sv.html">Svenska</a></p>
+
+<h1>Integritetspolicy</h1>
+<p class="updated">Free Parking Finder — Finland · Gäller från 21 augusti 2026</p>
+
+<p>
+  Denna policy förklarar vilka uppgifter appen Free Parking Finder — Finland
+  ("appen", "vi") samlar in, varför, och hur du kan kontrollera dem. Appen
+  utvecklas av en enskild utvecklare, Yomal Fernando, baserad i Finland.
+</p>
+
+<h2>1. Uppgifter vi samlar in</h2>
+
+<table>
+  <tr><th>Uppgift</th><th>När</th><th>Varför</th></tr>
+  <tr>
+    <td>Exakt platsdata (GPS)</td>
+    <td>När appen är öppen och används</td>
+    <td>För att visa parkeringsplatser nära dig och för att märka platsen när du skickar in en rapport. Vi samlar inte in platsdata i bakgrunden.</td>
+  </tr>
+  <tr>
+    <td>Kontoidentifierare</td>
+    <td>Vid första start (gäst) eller när du skapar ett konto</td>
+    <td>Gäster får automatiskt en anonym, enhetskopplad identifierare. Om du registrerar dig lagrar vi även den e-postadress du anger. Vi ser aldrig ditt lösenord — det hanteras helt av Firebase Authentication.</td>
+  </tr>
+  <tr>
+    <td>Rapporter om parkeringsplatser</td>
+    <td>När du skickar in eller korrigerar en rapport</td>
+    <td>GPS-koordinaterna, den tolkade parkeringsregeln, en tidsstämpel och din kontoidentifierare lagras så att platsen kan visas för andra användare och regeln kan verifieras igen över tid.</td>
+  </tr>
+  <tr>
+    <td>Foton av skyltar</td>
+    <td>När du fotograferar en parkeringsskylt</td>
+    <td>Fotot skickas direkt till Googles Gemini AI-modell för att läsa reglerna på skylten. Det laddas aldrig upp till våra egna servrar eller lagras någonstans — det raderas från din enhet så snart skärmen där du tog bilden stängs, oavsett om du skickar in rapporten eller inte.</td>
+  </tr>
+  <tr>
+    <td>Annonsidentifierare</td>
+    <td>Om du använder appen som gäst</td>
+    <td>Gästanvändare ser annonser som visas via Google AdMob, som kan använda enhetens annonsidentifierare enligt Googles egna annonspolicyer. Registrerade användare ser färre annonser och kan ta bort helskärmsannonser helt.</td>
+  </tr>
+  <tr>
+    <td>Enhetens verifieringssignaler</td>
+    <td>Vid varje förfrågan till vår backend</td>
+    <td>Firebase App Check verifierar att förfrågningar kommer från en äkta, oförändrad kopia av appen, för att förhindra missbruk. Detta bygger ingen profil om dig.</td>
+  </tr>
+</table>
+
+<h2>2. Vem vi delar uppgifter med</h2>
+<p>Vi säljer inte dina uppgifter. Vi använder följande tjänsteleverantörer för att driva appen:</p>
+<ul>
+  <li><strong>Google Firebase</strong> — autentisering, databas (Firestore), kontroller av appens integritet (App Check) och AI-baserad fototolkning (Gemini via Firebase AI Logic).</li>
+  <li><strong>Google AdMob</strong> — visar annonser för gästanvändare. Se <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Googles annonspolicy</a>.</li>
+  <li><strong>OpenStreetMap</strong> — tillhandahåller karttilesen du ser. Att ladda en karttile skickar din enhets IP-adress och det synliga kartområdet till OpenStreetMaps tile-servrar, precis som på vilken kartwebbplats som helst.</li>
+</ul>
+
+<h2>3. Hur länge vi behåller uppgifter</h2>
+<ul>
+  <li><strong>Rapporter om parkeringsplatser</strong> (plats + regel) behålls på obestämd tid som en del av gemenskapens delade karta, eftersom de beskriver en plats snarare än en person. En plats "rapporterad ledig/full just nu"-status upphör automatiskt efter 30 minuter, men själva platsposten finns kvar.</li>
+  <li><strong>Korrigeringsförslag</strong> (rapporter om att en plats regler är fel) rensas automatiskt när tillräckligt många är överens och korrigeringen tillämpas.</li>
+  <li><strong>Foton av skyltar</strong> lagras aldrig — se ovan.</li>
+  <li><strong>Kontouppgifter</strong> behålls tills du ber oss radera dem.</li>
+</ul>
+
+<h2>4. Dina rättigheter</h2>
+<p>
+  Om du befinner dig i EU/EES, Storbritannien eller en annan jurisdiktion
+  med liknande skydd har du rätt att få tillgång till, rätta, radera,
+  begränsa eller exportera dina personuppgifter, och att invända mot hur de
+  behandlas. Appen har ännu ingen självbetjäningsknapp för att radera ditt
+  konto — mejla oss på
+  <a href="mailto:yomalfdo@gmail.com">yomalfdo@gmail.com</a> så hanterar vi
+  begäran inom 30 dagar.
+</p>
+
+<h2>5. Barn</h2>
+<p>
+  Appen riktar sig inte till barn under 13 år, och vi samlar inte medvetet
+  in uppgifter från dem.
+</p>
+
+<h2>6. Säkerhet</h2>
+<p>
+  Vi förlitar oss på Firebases säkerhetsinfrastruktur (krypterade
+  anslutningar, App Check, autentiserad åtkomst) för att skydda dina
+  uppgifter. Ingen överförings- eller lagringsmetod är 100 % säker, och vi
+  kan inte garantera fullständig säkerhet.
+</p>
+
+<h2>7. Ändringar av denna policy</h2>
+<p>
+  Vi kan uppdatera denna policy allteftersom appen utvecklas. Uppdateringar
+  publiceras på denna sida med ett nytt ikraftträdandedatum.
+</p>
+
+<h2>8. Kontakt</h2>
+<p>
+  Frågor om denna policy eller dina uppgifter? Mejla
+  <a href="mailto:yomalfdo@gmail.com">yomalfdo@gmail.com</a>.
+</p>
+
+</body>
+</html>

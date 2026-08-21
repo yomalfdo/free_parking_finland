@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tietosuojaseloste — Free Parking Finder Finland</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    background: #fbfbf6;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  .updated { color: #555; font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; color: #1e4620; }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: #2e7d32; }
+  .lang-links { font-size: 0.9rem; margin-bottom: 2rem; }
+  .lang-links a { margin-right: 0.75rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border: 1px solid #ddd; vertical-align: top; font-size: 0.95rem; }
+  th { background: #eef4ee; }
+</style>
+</head>
+<body>
+
+<p class="lang-links">🌐 <a href="en.html">English</a> · <a href="fi.html">Suomi</a> · <a href="sv.html">Svenska</a></p>
+
+<h1>Tietosuojaseloste</h1>
+<p class="updated">Free Parking Finder — Finland · Voimassa 21. elokuuta 2026</p>
+
+<p>
+  Tämä seloste kertoo, mitä tietoja Free Parking Finder — Finland -sovellus
+  ("sovellus", "me") kerää, miksi, ja miten voit hallita niitä. Sovelluksen
+  on kehittänyt yksityinen kehittäjä Yomal Fernando, joka toimii Suomesta
+  käsin.
+</p>
+
+<h2>1. Keräämämme tiedot</h2>
+
+<table>
+  <tr><th>Tieto</th><th>Milloin</th><th>Miksi</th></tr>
+  <tr>
+    <td>Tarkka laitteen sijainti (GPS)</td>
+    <td>Kun sovellus on auki ja käytössä</td>
+    <td>Näyttääksemme lähellä olevat pysäköintipaikat ja merkitäksemme sijainnin, kun lähetät ilmoituksen. Emme kerää sijaintia taustalla.</td>
+  </tr>
+  <tr>
+    <td>Tilitunniste</td>
+    <td>Ensimmäisellä käynnistyskerralla (vieras) tai kun luot tilin</td>
+    <td>Vierailla on automaattisesti anonyymi, laitteeseen sidottu tunniste. Jos rekisteröidyt, tallennamme myös antamasi sähköpostiosoitteen. Emme koskaan näe salasanaasi — sen käsittelee kokonaan Firebase Authentication.</td>
+  </tr>
+  <tr>
+    <td>Pysäköintipaikkailmoitukset</td>
+    <td>Kun lähetät tai korjaat ilmoituksen</td>
+    <td>GPS-koordinaatit, tulkittu pysäköintisääntö, aikaleima ja tilitunnisteesi tallennetaan, jotta paikka voidaan näyttää muille käyttäjille ja sääntö voidaan vahvistaa uudelleen ajan myötä.</td>
+  </tr>
+  <tr>
+    <td>Kyltin valokuvat</td>
+    <td>Kun kuvaat pysäköintikyltin</td>
+    <td>Valokuva lähetetään suoraan Googlen Gemini-tekoälymallille kyltin sääntöjen lukemista varten. Sitä ei koskaan ladata omille palvelimillemme eikä tallenneta minnekään — se poistetaan laitteeltasi heti, kun kuvausnäyttö suljetaan, lähetitpä ilmoituksen tai et.</td>
+  </tr>
+  <tr>
+    <td>Mainostunnisteet</td>
+    <td>Jos käytät sovellusta vieraana</td>
+    <td>Vierailijat näkevät Google AdMobin kautta tarjottuja mainoksia, jotka voivat käyttää laitteen mainostunnisteita Googlen omien mainoskäytäntöjen mukaisesti. Rekisteröityneet käyttäjät näkevät vähemmän mainoksia ja voivat poistaa koko näytön mainokset kokonaan.</td>
+  </tr>
+  <tr>
+    <td>Laitteen todennussignaalit</td>
+    <td>Jokaisella pyynnöllä taustajärjestelmäämme</td>
+    <td>Firebase App Check varmistaa, että pyynnöt tulevat aidosta, muokkaamattomasta sovelluskopiosta väärinkäytön estämiseksi. Tämä ei luo sinusta profiilia.</td>
+  </tr>
+</table>
+
+<h2>2. Kenen kanssa jaamme tietoja</h2>
+<p>Emme myy tietojasi. Käytämme seuraavia palveluntarjoajia sovelluksen ylläpitämiseen:</p>
+<ul>
+  <li><strong>Google Firebase</strong> — todennus, tietokanta (Firestore), sovelluksen eheystarkistukset (App Check) ja tekoälypohjainen valokuvatulkinta (Gemini Firebase AI Logicin kautta).</li>
+  <li><strong>Google AdMob</strong> — näyttää mainoksia vierailijoille. Katso <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Googlen mainoskäytäntö</a>.</li>
+  <li><strong>OpenStreetMap</strong> — toimittaa näkemäsi karttalaatat. Karttalaatan lataaminen lähettää laitteesi IP-osoitteen ja näkyvän karttaosan OpenStreetMapin laattapalvelimille, samoin kuin millä tahansa karttasivustolla.</li>
+</ul>
+
+<h2>3. Kuinka kauan säilytämme tietoja</h2>
+<ul>
+  <li><strong>Pysäköintipaikkailmoitukset</strong> (sijainti + sääntö) säilytetään toistaiseksi osana yhteisön jaettua karttaa, sillä ne kuvaavat paikkaa, eivät henkilöä. Paikan "ilmoitettu vapaaksi/täyteen juuri nyt" -tila vanhenee automaattisesti 30 minuutin kuluttua, mutta itse paikkatietue säilyy.</li>
+  <li><strong>Korjausehdotukset</strong> (ilmoitukset siitä, että paikan säännöt ovat väärin) poistetaan automaattisesti, kun tarpeeksi moni on samaa mieltä ja korjaus on otettu käyttöön.</li>
+  <li><strong>Kyltin valokuvia</strong> ei koskaan tallenneta — katso yllä.</li>
+  <li><strong>Tilitiedot</strong> säilytetään, kunnes pyydät meitä poistamaan ne.</li>
+</ul>
+
+<h2>4. Oikeutesi</h2>
+<p>
+  Jos olet EU:ssa/ETA-alueella, Isossa-Britanniassa tai muulla alueella,
+  jossa on vastaavat suojat, sinulla on oikeus tarkastella, korjata, poistaa
+  tai siirtää henkilötietojasi sekä rajoittaa niiden käsittelyä ja vastustaa
+  sitä. Sovelluksessa ei vielä ole itsepalvelupainiketta tilin poistamiseen —
+  lähetä sähköpostia osoitteeseen
+  <a href="mailto:yomalfdo@gmail.com">yomalfdo@gmail.com</a>, niin
+  käsittelemme pyynnön 30 päivän kuluessa.
+</p>
+
+<h2>5. Lapset</h2>
+<p>
+  Sovellus ei ole suunnattu alle 13-vuotiaille lapsille, emmekä tietoisesti
+  kerää heidän tietojaan.
+</p>
+
+<h2>6. Tietoturva</h2>
+<p>
+  Luotamme Firebasen tietoturvainfrastruktuuriin (salatut yhteydet,
+  App Check, todennettu pääsy) tietojesi suojaamiseksi. Mikään
+  tiedonsiirto- tai tallennusmenetelmä ei ole 100-prosenttisen turvallinen,
+  emmekä voi taata täydellistä tietoturvaa.
+</p>
+
+<h2>7. Muutokset tähän selosteeseen</h2>
+<p>
+  Voimme päivittää tätä selostetta sovelluksen kehittyessä. Päivitykset
+  julkaistaan tällä sivulla uudella voimaantulopäivällä.
+</p>
+
+<h2>8. Yhteystiedot</h2>
+<p>
+  Kysyttävää tästä selosteesta tai tiedoistasi? Lähetä sähköpostia
+  osoitteeseen <a href="mailto:yomalfdo@gmail.com">yomalfdo@gmail.com</a>.
+</p>
+
+</body>
+</html>

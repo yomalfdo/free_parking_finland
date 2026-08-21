@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Free Parking Finder Finland</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    background: #fbfbf6;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  .updated { color: #555; font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; color: #1e4620; }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: #2e7d32; }
+  .lang-links { font-size: 0.9rem; margin-bottom: 2rem; }
+  .lang-links a { margin-right: 0.75rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border: 1px solid #ddd; vertical-align: top; font-size: 0.95rem; }
+  th { background: #eef4ee; }
+</style>
+</head>
+<body>
+
+<p class="lang-links">🌐 <a href="en.html">English</a> · <a href="fi.html">Suomi</a> · <a href="sv.html">Svenska</a></p>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Free Parking Finder — Finland · Effective 21 August 2026</p>
+
+<p>
+  This policy explains what data the Free Parking Finder — Finland app
+  ("the app", "we", "us") collects, why, and how you can control it. The app
+  is developed by an individual developer, Yomal Fernando, based in Finland.
+</p>
+
+<h2>1. Data we collect</h2>
+
+<table>
+  <tr><th>Data</th><th>When</th><th>Why</th></tr>
+  <tr>
+    <td>Precise device location (GPS)</td>
+    <td>While the app is open and in use</td>
+    <td>To show parking spots near you and to tag the location when you submit a report. We do not collect location in the background.</td>
+  </tr>
+  <tr>
+    <td>Account identifier</td>
+    <td>On first launch (guest) or when you create an account</td>
+    <td>Guests get an anonymous device-linked identifier automatically. If you register, we also store the email address you provide. We never see your password — it's handled entirely by Firebase Authentication.</td>
+  </tr>
+  <tr>
+    <td>Parking spot reports</td>
+    <td>When you submit or correct a report</td>
+    <td>The GPS coordinates, the interpreted parking rule, a timestamp, and your account identifier are stored so the spot can be shown to other users and the rule can be re-verified over time.</td>
+  </tr>
+  <tr>
+    <td>Sign photos</td>
+    <td>When you photograph a parking sign</td>
+    <td>The photo is sent directly to Google's Gemini AI model to read the rules on the sign. It is never uploaded to our own servers or stored anywhere — it's deleted from your device as soon as the screen where you took it is closed, whether or not you submit the report.</td>
+  </tr>
+  <tr>
+    <td>Advertising identifiers</td>
+    <td>If you're using the app as a guest</td>
+    <td>Guest users see ads served through Google AdMob, which may use device advertising identifiers per Google's own advertising policies. Registered users see fewer ads and can remove full-screen ads entirely.</td>
+  </tr>
+  <tr>
+    <td>Device attestation signals</td>
+    <td>On every request to our backend</td>
+    <td>Firebase App Check verifies that requests come from a genuine, unmodified copy of the app, to prevent abuse. This doesn't build a profile of you.</td>
+  </tr>
+</table>
+
+<h2>2. Who we share data with</h2>
+<p>We don't sell your data. We use the following service providers to run the app:</p>
+<ul>
+  <li><strong>Google Firebase</strong> — authentication, database (Firestore), app integrity checks (App Check), and AI photo interpretation (Gemini via Firebase AI Logic).</li>
+  <li><strong>Google AdMob</strong> — serves ads to guest users. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policy</a>.</li>
+  <li><strong>OpenStreetMap</strong> — supplies the map tiles you see. Loading a map tile sends your device's IP address and the visible map area to OpenStreetMap's tile servers, the same as any map website.</li>
+</ul>
+
+<h2>3. How long we keep data</h2>
+<ul>
+  <li><strong>Parking spot reports</strong> (location + rule) are kept indefinitely as part of the shared community map, since they describe a place rather than a person. A spot's "reported free/full right now" status automatically expires after 30 minutes, though the underlying spot record stays.</li>
+  <li><strong>Correction proposals</strong> (reports that a spot's rules are wrong) are cleared automatically once enough people agree and the correction is applied.</li>
+  <li><strong>Sign photos</strong> are never stored — see above.</li>
+  <li><strong>Account data</strong> is kept until you ask us to delete it.</li>
+</ul>
+
+<h2>4. Your rights</h2>
+<p>
+  If you're in the EU/EEA, UK, or another jurisdiction with similar protections,
+  you have the right to access, correct, delete, restrict, or export your
+  personal data, and to object to how it's processed. The app doesn't yet
+  have a self-service delete-my-account button — email us at
+  <a href="mailto:yomalfdo@gmail.com">yomalfdo@gmail.com</a> and we'll handle
+  the request within 30 days.
+</p>
+
+<h2>5. Children</h2>
+<p>
+  The app is not directed at children under 13, and we don't knowingly
+  collect data from them.
+</p>
+
+<h2>6. Security</h2>
+<p>
+  We rely on Firebase's security infrastructure (encrypted connections,
+  App Check, authenticated access) to protect your data. No method of
+  transmission or storage is 100% secure, and we can't guarantee absolute
+  security.
+</p>
+
+<h2>7. Changes to this policy</h2>
+<p>
+  We may update this policy as the app changes. Updates will be posted on
+  this page with a new effective date.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+  Questions about this policy or your data? Email
+  <a href="mailto:yomalfdo@gmail.com">yomalfdo@gmail.com</a>.
+</p>
+
+</body>
+</html>
