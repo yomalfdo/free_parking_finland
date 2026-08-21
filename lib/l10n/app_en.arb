@@ -1,0 +1,446 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Free Parking Finland",
+  "@appTitle": {
+    "description": "The application name, shown on the home screen and app switcher."
+  },
+
+  "mapPlaceholderTitle": "Map view",
+  "@mapPlaceholderTitle": {
+    "description": "Heading shown over the placeholder box that will later hold the real map."
+  },
+
+  "mapPlaceholderSubtitle": "Real map coming soon",
+  "@mapPlaceholderSubtitle": {
+    "description": "Subtext under the map placeholder heading."
+  },
+
+  "locationPermissionDialogTitle": "Location access needed",
+  "@locationPermissionDialogTitle": {
+    "description": "Title of the dialog shown before requesting the OS location permission."
+  },
+
+  "locationPermissionDialogBody": "We use your location to show free parking spots near you and let you report the ones you find. This app won't work without it.",
+  "@locationPermissionDialogBody": {
+    "description": "Friendly explanation of why location access is required, shown before the OS permission prompt."
+  },
+
+  "locationPermissionContinue": "Continue",
+  "@locationPermissionContinue": {
+    "description": "Button that proceeds from the explanation dialog to the OS permission prompt."
+  },
+
+  "locationPermissionDenied": "Location permission is required to use this app.",
+  "@locationPermissionDenied": {
+    "description": "Shown when the user denies the location permission request."
+  },
+
+  "locationPermissionRetry": "Try again",
+  "@locationPermissionRetry": {
+    "description": "Button to re-request location permission after it was denied."
+  },
+
+  "locationPermissionOpenSettings": "Open settings",
+  "@locationPermissionOpenSettings": {
+    "description": "Button that opens the phone's app settings screen."
+  },
+
+  "locationPermissionPermanentlyDenied": "Location access is turned off for this app. Please enable it in your phone's settings.",
+  "@locationPermissionPermanentlyDenied": {
+    "description": "Shown when location permission has been permanently denied and can only be changed from system settings."
+  },
+
+  "locationServicesDisabled": "Location services are turned off. Please turn them on in your phone's settings.",
+  "@locationServicesDisabled": {
+    "description": "Shown when the phone's location services (GPS) are off entirely, separate from the app's own permission."
+  },
+
+  "accountTooltip": "Account",
+  "@accountTooltip": {
+    "description": "Tooltip on the app bar icon that opens the account screen."
+  },
+
+  "accountScreenTitle": "Account",
+  "@accountScreenTitle": {
+    "description": "Title of the account screen."
+  },
+
+  "guestStatusLabel": "You're using a guest account. Create an account to keep your data if you switch phones.",
+  "@guestStatusLabel": {
+    "description": "Shown on the account screen when the current user is an anonymous guest."
+  },
+
+  "signedInAsLabel": "Signed in as {email}",
+  "@signedInAsLabel": {
+    "description": "Shown on the account screen once the guest has created or signed into a real account.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+
+  "signUpTitle": "Create an account",
+  "@signUpTitle": {
+    "description": "Heading over the sign-up form."
+  },
+
+  "signInTitle": "Sign in",
+  "@signInTitle": {
+    "description": "Heading over the sign-in form."
+  },
+
+  "emailLabel": "Email",
+  "@emailLabel": {
+    "description": "Label for the email text field."
+  },
+
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": "Label for the password text field."
+  },
+
+  "signUpButton": "Sign up",
+  "@signUpButton": {
+    "description": "Button that submits the sign-up form."
+  },
+
+  "signInButton": "Sign in",
+  "@signInButton": {
+    "description": "Button that submits the sign-in form."
+  },
+
+  "switchToSignIn": "Already have an account? Sign in",
+  "@switchToSignIn": {
+    "description": "Link that switches the form from sign-up mode to sign-in mode."
+  },
+
+  "switchToSignUp": "New here? Create an account",
+  "@switchToSignUp": {
+    "description": "Link that switches the form from sign-in mode to sign-up mode."
+  },
+
+  "signOutButton": "Sign out",
+  "@signOutButton": {
+    "description": "Button that signs the user out, returning them to a guest session."
+  },
+
+  "authGenericError": "Something went wrong. Please try again.",
+  "@authGenericError": {
+    "description": "Fallback error message for unrecognized auth errors."
+  },
+
+  "authEmailAlreadyInUse": "That email is already registered. Try signing in instead.",
+  "@authEmailAlreadyInUse": {
+    "description": "Shown when signing up with an email that's already registered."
+  },
+
+  "authWeakPassword": "Choose a stronger password (at least 6 characters).",
+  "@authWeakPassword": {
+    "description": "Shown when the chosen password is too weak."
+  },
+
+  "authInvalidEmail": "That doesn't look like a valid email address.",
+  "@authInvalidEmail": {
+    "description": "Shown when the entered email is not validly formatted."
+  },
+
+  "authWrongCredentials": "Incorrect email or password.",
+  "@authWrongCredentials": {
+    "description": "Shown when sign-in fails because the email or password is wrong."
+  },
+
+  "addSpotTooltip": "Add spot",
+  "@addSpotTooltip": {
+    "description": "Tooltip on the button that starts the report-a-spot flow."
+  },
+
+  "captureScreenTitle": "Photograph the sign",
+  "@captureScreenTitle": {
+    "description": "Title of the camera capture screen."
+  },
+
+  "captureInstructions": "Frame the parking sign clearly, then tap to capture.",
+  "@captureInstructions": {
+    "description": "Instructions shown over the camera preview."
+  },
+
+  "captureButtonLabel": "Capture",
+  "@captureButtonLabel": {
+    "description": "Accessibility label for the shutter button."
+  },
+
+  "cameraPermissionDenied": "Camera access is needed to report a spot.",
+  "@cameraPermissionDenied": {
+    "description": "Shown when camera permission is denied."
+  },
+
+  "cameraPermissionOpenSettings": "Open settings",
+  "@cameraPermissionOpenSettings": {
+    "description": "Button that opens the phone's app settings screen from the camera-denied message."
+  },
+
+  "capturingLocation": "Getting your location...",
+  "@capturingLocation": {
+    "description": "Shown briefly while GPS location is captured alongside the photo."
+  },
+
+  "captureFailed": "Couldn't take the photo. Please try again.",
+  "@captureFailed": {
+    "description": "Shown when taking the photo fails unexpectedly."
+  },
+
+  "retakePhoto": "Retake",
+  "@retakePhoto": {
+    "description": "Button to discard the photo just taken and capture again."
+  },
+
+  "usePhoto": "Use this photo",
+  "@usePhoto": {
+    "description": "Button to proceed with the photo just taken."
+  },
+
+  "confirmScreenTitle": "Confirm the rules",
+  "@confirmScreenTitle": {
+    "description": "Title of the screen where the user reviews and edits the interpreted parking rules."
+  },
+
+  "confirmInstructions": "Here's what we read from the sign. Edit anything that's not right.",
+  "@confirmInstructions": {
+    "description": "Instructions at the top of the confirm/edit screen."
+  },
+
+  "summaryLabel": "Summary",
+  "@summaryLabel": {
+    "description": "Label above the plain-language rule summary."
+  },
+
+  "freeDaysLabel": "Free days",
+  "@freeDaysLabel": {
+    "description": "Label above the day-of-week selector."
+  },
+
+  "freeHoursLabel": "Free hours",
+  "@freeHoursLabel": {
+    "description": "Label above the free-time-window controls."
+  },
+
+  "allDayToggleLabel": "Free all day",
+  "@allDayToggleLabel": {
+    "description": "Switch that toggles between an all-day rule and a specific time window."
+  },
+
+  "fromTimeLabel": "From",
+  "@fromTimeLabel": {
+    "description": "Label for the start-of-window time picker."
+  },
+
+  "toTimeLabel": "To",
+  "@toTimeLabel": {
+    "description": "Label for the end-of-window time picker."
+  },
+
+  "maxDurationLabel": "Max stay",
+  "@maxDurationLabel": {
+    "description": "Label above the maximum-stay-duration control."
+  },
+
+  "noLimitLabel": "No limit",
+  "@noLimitLabel": {
+    "description": "Value shown/selected when there's no maximum stay duration."
+  },
+
+  "minutesValue": "{minutes} min",
+  "@minutesValue": {
+    "description": "A duration in minutes, e.g. '120 min'.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+
+  "exceptionsLabel": "Exceptions",
+  "@exceptionsLabel": {
+    "description": "Label above the free-text exceptions field."
+  },
+
+  "exceptionsHint": "e.g. residents exempt",
+  "@exceptionsHint": {
+    "description": "Placeholder text in the exceptions field."
+  },
+
+  "confirmAndSubmitButton": "Confirm and submit",
+  "@confirmAndSubmitButton": {
+    "description": "Button that submits the confirmed spot report."
+  },
+
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "description": "Button that discards the report in progress."
+  },
+
+  "spotSubmittedMessage": "Spot reported. Thanks for helping others find free parking!",
+  "@spotSubmittedMessage": {
+    "description": "Confirmation shown after a spot report is successfully submitted."
+  },
+
+  "dayMonday": "Mon",
+  "dayTuesday": "Tue",
+  "dayWednesday": "Wed",
+  "dayThursday": "Thu",
+  "dayFriday": "Fri",
+  "daySaturday": "Sat",
+  "daySunday": "Sun",
+
+  "toggleToListView": "Switch to list view",
+  "@toggleToListView": {
+    "description": "Tooltip on the button that switches from map to list view."
+  },
+
+  "toggleToMapView": "Switch to map view",
+  "@toggleToMapView": {
+    "description": "Tooltip on the button that switches from list to map view."
+  },
+
+  "noSpotsNearbyMessage": "No free parking spots reported nearby yet.",
+  "@noSpotsNearbyMessage": {
+    "description": "Shown when there are no reported spots within 1km."
+  },
+
+  "spotDetailTitle": "Parking spot",
+  "@spotDetailTitle": {
+    "description": "Title of the spot detail screen."
+  },
+
+  "justNowLabel": "Just now",
+  "@justNowLabel": {
+    "description": "Shown instead of a duration when a spot was reported less than a minute ago."
+  },
+
+  "reportedMinutesAgo": "Reported {minutes} min ago",
+  "@reportedMinutesAgo": {
+    "description": "How long ago a spot was reported, in minutes.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+
+  "reportedHoursAgo": "Reported {hours} h ago",
+  "@reportedHoursAgo": {
+    "description": "How long ago a spot was reported, in hours.",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+
+  "reportedDaysAgo": "Reported {days} d ago",
+  "@reportedDaysAgo": {
+    "description": "How long ago a spot was reported, in days.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+
+  "navigateButton": "Navigate",
+  "@navigateButton": {
+    "description": "Button that starts turn-by-turn navigation to a spot."
+  },
+
+  "chooseNavigationAppTitle": "Choose navigation app",
+  "@chooseNavigationAppTitle": {
+    "description": "Title of the dialog offering a choice of maps app."
+  },
+
+  "googleMapsOption": "Google Maps",
+  "@googleMapsOption": {
+    "description": "Option to navigate using Google Maps."
+  },
+
+  "appleMapsOption": "Apple Maps",
+  "@appleMapsOption": {
+    "description": "Option to navigate using Apple Maps."
+  },
+
+  "statusFreeNowLabel": "Free right now",
+  "@statusFreeNowLabel": {
+    "description": "Spot status: currently free, by rule or crowd confirmation."
+  },
+
+  "statusReportedFullLabel": "Reported full",
+  "@statusReportedFullLabel": {
+    "description": "Spot status: someone recently reported it full."
+  },
+
+  "statusNotFreeNowLabel": "Not currently free",
+  "@statusNotFreeNowLabel": {
+    "description": "Spot status: outside its free hours, or unconfirmed."
+  },
+
+  "distanceMetersValue": "{value} m",
+  "@distanceMetersValue": {
+    "description": "Distance to a spot in meters, e.g. '350 m'.",
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+
+  "distanceKilometersValue": "{value} km",
+  "@distanceKilometersValue": {
+    "description": "Distance to a spot in kilometers, e.g. '0.8 km'.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+
+  "registerToRemoveAdsMessage": "Tired of ads? Create a free account to remove them.",
+  "@registerToRemoveAdsMessage": {
+    "description": "Nudge shown to guests after a full-screen ad, encouraging them to register."
+  },
+
+  "createAccountAction": "Create account",
+  "@createAccountAction": {
+    "description": "Short action button label that opens the account/sign-up screen."
+  },
+
+  "reportButton": "Report incorrect info",
+  "@reportButton": {
+    "description": "Button on the spot detail screen that starts the correction-report flow."
+  },
+
+  "reportScreenTitle": "Report incorrect rules",
+  "@reportScreenTitle": {
+    "description": "Title of the camera screen when photographing a sign to correct an existing spot."
+  },
+
+  "reportInstructions": "Photograph the sign again so we can double-check the rules.",
+  "@reportInstructions": {
+    "description": "Instructions shown over the camera preview when reporting a correction."
+  },
+
+  "reportConfirmInstructions": "Here's what we read from the sign. Edit anything that's not right, then submit your correction.",
+  "@reportConfirmInstructions": {
+    "description": "Instructions at the top of the confirm/edit screen when submitting a correction."
+  },
+
+  "submitCorrectionButton": "Submit correction",
+  "@submitCorrectionButton": {
+    "description": "Button that submits a correction report for an existing spot."
+  },
+
+  "correctionSubmittedMessage": "Thanks! Once enough people agree, we'll update this spot's info.",
+  "@correctionSubmittedMessage": {
+    "description": "Confirmation shown after a correction report is successfully submitted."
+  }
+}
